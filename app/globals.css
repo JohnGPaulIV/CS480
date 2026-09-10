@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #EDF1F4;
+  background-image:
+    linear-gradient(rgba(44, 95, 134, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(44, 95, 134, 0.09) 1px, transparent 1px);
+  background-size: 28px 28px;
+  color: #10243D;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Registration crosshair, repeated once per corner of a sheet -- the one
+   running motif tying every page back to a technical drawing sheet. */
+.reg-mark {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+.reg-mark::before,
+.reg-mark::after {
+  content: "";
+  position: absolute;
+  background: #2C5F86;
+}
+.reg-mark::before {
+  left: 50%;
+  top: 0;
+  width: 1.5px;
+  height: 100%;
+  transform: translateX(-50%);
+}
+.reg-mark::after {
+  top: 50%;
+  left: 0;
+  height: 1.5px;
+  width: 100%;
+  transform: translateY(-50%);
+}
+.reg-mark-circle {
+  position: absolute;
+  inset: 3px;
+  border: 1.5px solid #2C5F86;
+  border-radius: 9999px;
+}
+.reg-draw {
+  animation: reg-draw-in 900ms ease-out both;
+}
+@keyframes reg-draw-in {
+  from {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Plate framing for photos / screenshots, echoing a mounted drawing plate
+   with corner registration ticks and a caption strip. */
+.plate {
+  position: relative;
+  border: 1px solid #2C5F86;
+  background: #10243D;
+  padding: 10px;
+}
+.plate-tick {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: #D98E04;
+  border-style: solid;
+  border-width: 0;
+}
+.plate-tick.tl { top: -1px; left: -1px; border-top-width: 2px; border-left-width: 2px; }
+.plate-tick.tr { top: -1px; right: -1px; border-top-width: 2px; border-right-width: 2px; }
+.plate-tick.bl { bottom: -1px; left: -1px; border-bottom-width: 2px; border-left-width: 2px; }
+.plate-tick.br { bottom: -1px; right: -1px; border-bottom-width: 2px; border-right-width: 2px; }
+
+.dim-line {
+  height: 1px;
+  background: repeating-linear-gradient(
+    to right,
+    #2C5F86 0,
+    #2C5F86 6px,
+    transparent 6px,
+    transparent 11px
+  );
+}
