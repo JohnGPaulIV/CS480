@@ -5,6 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: '/CS480',
+  assetPrefix: '/CS480/',
 };
 
 module.exports = nextConfig;
