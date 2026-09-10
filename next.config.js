@@ -6,7 +6,7 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: '/CS480',
-  assetPrefix: '/CS480/',
+  assetPrefix: '/CS480',
 };
 
 module.exports = nextConfig;
