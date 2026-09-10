@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Sheet from "@/components/Sheet";
+import { basePath } from "@/lib/basePath";
 
 const parts = [
   {
@@ -54,7 +55,7 @@ export default function Project1() {
           <span className="plate-tick bl" />
           <span className="plate-tick br" />
           <Image
-            src="/images/hw1-scene.png"
+            src={`${basePath}/images/hw1-scene.png`}
             alt="Unity scene showing a desk holding a monitor, a computer, a keyboard, and a mouse on a mouse pad"
             width={1351}
             height={970}

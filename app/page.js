@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Sheet from "@/components/Sheet";
+import { basePath } from "@/lib/basePath";
 
 const projects = [
   {
@@ -22,7 +23,7 @@ export default function Home() {
             <span className="plate-tick bl" />
             <span className="plate-tick br" />
             <Image
-              src="/images/headshot.jpeg"
+              src={`${basePath}/images/headshot.jpeg`}
               alt="Portrait of John Gilbert Paul IV"
               width={400}
               height={400}
