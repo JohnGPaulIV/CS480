@@ -10,6 +10,12 @@ const projects = [
     title: "HW 1 — Unity First Scene",
     kicker: "A desk, a monitor, a mouse — five cubes and one sphere.",
   },
+  {
+    sheet: "02",
+    href: "/project2",
+    title: "HW 2 — Unity Roll-a-Ball",
+    kicker: "Rolling for points, with a custom 2-point pickup.",
+  },
 ];
 
 export default function Home() {
