@@ -14,8 +14,8 @@ const takeaways = [
   },
   {
     tag: "T03",
-    title: "TAKEAWAY_3_PLACEHOLDER",
-    body: "TAKEAWAY_3_BODY_PLACEHOLDER",
+    title: "Making design easier with prefabs",
+    body: "Prefabs can be made by dragging and dropping one (or more) of your assets from the heirarchy into the project panel. Prefabs are extremely useful as they allow you to create some type of base component, an example from the homework are the \"pickups\". By taking the prefab you can just drop it into your scene and it already has the base properties needed such as the script.",
   },
 ];
 
