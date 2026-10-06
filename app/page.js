@@ -16,6 +16,12 @@ const projects = [
     title: "HW 2 — Unity Roll-a-Ball",
     kicker: "Rolling for points, with a custom 2-point pickup.",
   },
+  {
+    sheet: "03",
+    href: "/project3",
+    title: "HW 3 - Hollow Pines Trail",
+    kicker: "A night hike, a missing hiker, and a trail of clues.",
+  },
 ];
 
 export default function Home() {
