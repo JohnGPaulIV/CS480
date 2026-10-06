@@ -22,6 +22,11 @@ const triggers = [
         effect: "Subtitle suggests Sam left in a hurry, the first sign that something went wrong.",
     },
     {
+        name: "Two paths",
+        location: "Where the path splits",
+        effect: "Subtitle explains that part of the path is blocked so they must continue straight."
+    },
+    {
         name: "Cabin",
         location: "Wooden cabin at the end of the trail",
         effect: "Final subtitle reveals Sam made it to the cabin safely, ending the story.",
