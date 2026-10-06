@@ -12,14 +12,14 @@ const triggers = [
         effect: "Subtitle introduces the story: a hiker named Sam went up this trail three days ago and never came back.",
     },
     {
-        name: "Dropped bag",
-        location: "Backpack lying on the path",
-        effect: "Subtitle suggests Sam left in a hurry, the first sign that something went wrong.",
-    },
-    {
         name: "Campsite",
         location: "Tent and campfire clearing",
         effect: "Fire crackling audio plays and a subtitle notes the fire is still warm, so Sam was here recently.",
+    },
+    {
+        name: "Dropped bag",
+        location: "Backpack lying on the path",
+        effect: "Subtitle suggests Sam left in a hurry, the first sign that something went wrong.",
     },
     {
         name: "Cabin",
@@ -99,13 +99,13 @@ export default function Project3() {
                 </p>
                 <p className="mt-4 max-w-prose text-base leading-relaxed text-ink-soft">
                     As the player walks, the story unfolds through four triggers. Each
-                    one shows a subtitle at the bottom of the player&apos;s view, and
+                    one shows a subtitle at the center of the player&apos;s view, and
                     together they work like a trail of clues. First the sign sets up
-                    the mystery. Then a dropped backpack on the path hints that Sam was
-                    in a hurry. At the campsite, the crackling fire and the line
+                    the mystery. Then the campsite, the crackling fire and the line
                     &ldquo;the fire&apos;s still warm&rdquo; tell the player Sam was here
-                    recently, which builds tension and pushes them forward. Finally, the
-                    trail ends at a lit cabin where the player learns Sam made it there
+                    recently, which builds tension and pushes them forward.
+                    Then a dropped backpack on the path hints that Sam was in a hurry. Finally, the
+                    trail ends at a cabin where the player learns Sam made it there
                     safely. The goal was for the player to feel a little uneasy walking
                     through the dark woods, and then relieved when the mystery resolves.
                 </p>
